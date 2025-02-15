@@ -36,7 +36,7 @@ Diese Vorlage wurde von uns der Hochschule Burgenland zur verwendung zur Verfüg
   - `04_Empirische_Studie/_main.tex`: Empirischer Teil.
   - `05_ergebnisse.tex`: Ergebnisse.
   - `06_schlussfolgerung_ausblick.tex`: Schlussfolgerung und Ausblick.
-  - `07_Literature.tex`: Literaturverzeichnis.
+  - `references.bib`: Literaturverzeichnis.
 
 ### `C_BackMatter`
 - Enthält Anhänge und zusätzliche Materialien:
