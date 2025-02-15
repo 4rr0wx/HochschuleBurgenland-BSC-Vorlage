@@ -38,7 +38,18 @@
 
 \input{A_FrontMatter/titlepage} %Creates the titlepage
 \frontmatter{} % turns off chapter numbering and uses roman numerals for page numbers
+
 \input{thesis_chapters/00_Vorwort.tex}     % adds the acknowledgements
+
+%Inhaltsverzeichnis folgender Block \renewcommand{\contentsname}{Inhalt} \tableofcontents{}
+\renewcommand{\contentsname}{Inhalt}
+\tableofcontents{}
+
+%Folgender Block fügt eine leere Seite ohne Nummerierung hinzu 
+\newpage
+\pagestyle{empty} % oder plain für normale Nummerierung beibehalten
+\null 
+\newpage
 
 \renewcommand{\figurename}{Abbildung}
 
@@ -49,22 +60,19 @@
 \input{thesis_chapters/00_abstract_de}
 \input{thesis_chapters/00_abstract_en}
 \microtypesetup{protrusion=false}
-\renewcommand{\contentsname}{Inhalt}
-\tableofcontents{}
+
 
 \mainmatter{} % turns on chapter numbering, resets page numbering and uses arabic numerals for page numbers
-
 \input{thesis_chapters/01_einleitung/_main}
-\input{thesis_chapters/02_standDesWissens}
-\input{thesis_chapters/03_Grundlagen/_main}
-\input{thesis_chapters/04_Empirische_Studie/_main.tex}
-\input{thesis_chapters/05_ergebnisse}
-\input{thesis_chapters/06_schlussfolgerung_ausblick.tex}
-
-\input{thesis_chapters/07_Literature.tex}
+\input{thesis_chapters/02_Grundlagen/_main.tex}
+\input{thesis_chapters/03_Vorgangsweise_und_Methoden/_main.tex}
+\input{thesis_chapters/04_Empirische_Teil/_main.tex}
+\input{thesis_chapters/05_Ergebnisse_und_Schlussfolgerung/_main.tex}
+\input{thesis_chapters/06_Zusammenfassung/_main.tex}
 
 %\nocite{*} % includes complete bibliography, including entries that remain uncited, RMF
-\printbibliography[title=\literatureLabel] % bibliography
+\printbibliography[heading=bibnumbered, title=\literatureLabel] % bibliography
+
 
 % Use an optional list of tables / figures / algorithms / listings(code).
 
@@ -99,7 +107,7 @@
 %\{} % resets chapter numbering, uses letters for chapter numbers and doesn't fiddle with page numbering
 %\backmatter{} %turns off chapter numbering and doesn't fiddle with page numberin
 %\input{C_BackMatter/glossary}
-
+\input{Formelverzeichnis.tex}
 \input{acronyms}
 \clearpage
 \input{C_BackMatter/Anhang/_main}
