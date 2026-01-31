@@ -42,12 +42,12 @@
 \input{thesis_chapters/00_Vorwort.tex}     % adds the acknowledgements
 
 %Inhaltsverzeichnis folgender Block \renewcommand{\contentsname}{Inhalt} \tableofcontents{}
-\renewcommand{\contentsname}{Inhalt}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
 \tableofcontents{}
 
 %Folgender Block fügt eine leere Seite ohne Nummerierung hinzu 
 \newpage
-\pagestyle{empty} % oder plain für normale Nummerierung beibehalten
+\pagestyle{plain} % oder plain für normale Nummerierung beibehalten
 \null 
 \newpage
 
@@ -63,11 +63,11 @@
 
 
 \mainmatter{} % turns on chapter numbering, resets page numbering and uses arabic numerals for page numbers
-\input{thesis_chapters/01_einleitung/_main}
-\input{thesis_chapters/02_Grundlagen/_main.tex}
-\input{thesis_chapters/03_Vorgangsweise_und_Methoden/_main.tex}
-\input{thesis_chapters/04_Empirische_Teil/_main.tex}
-\input{thesis_chapters/05_Ergebnisse_und_Schlussfolgerung/_main.tex}
+\input{thesis_chapters/01_Einleitung/_main.tex}
+\input{thesis_chapters/02_Theoretischer_Hintergrund_und_Stand_der_Forschung/main.tex}
+\input{thesis_chapters/03_Methoden_und_Forschungsdesign/_main.tex}
+\input{thesis_chapters/04_Empirische_Ergebnisse_und_Evaluierung/_main.tex}
+\input{thesis_chapters/05_Diskussion_und_Interpretation/_main.tex}
 \input{thesis_chapters/06_Zusammenfassung/_main.tex}
 
 %\nocite{*} % includes complete bibliography, including entries that remain uncited, RMF
@@ -112,6 +112,7 @@
 \clearpage
 \input{C_BackMatter/Anhang/_main}
 \clearpage
+\input{Tooldokumentation.tex}
 \input{C_BackMatter/Eidesstattliche Erklärung.tex}
 
 %\input{C_BackMatter/Anhang}
